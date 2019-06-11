@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://ljet1d.github.io/
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -122,7 +122,7 @@ live2d:
     use: live2d-widget-model-tororo
   # 摆放位置
   display:
-    position: right
+    position: left
     width: 150
     height: 300
   mobile:
