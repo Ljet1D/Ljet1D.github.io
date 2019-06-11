@@ -26,6 +26,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
 
 
 
@@ -97,7 +101,7 @@
 <meta name="description" content="Welcome to 息影! 一、合作互推 虽然是微博上的玩法，但据称效果还不错！这也是最好最快的方法。微信互推的效果远比微博互推的效果好。先做到1000粉丝后开始找人合作互推，每次效果好都会获得上百的粉丝。所以做微信合作也很重要。 但需要切记的是，这种方法可在微博上互推，但微信上需谨慎，一旦被举报，有可能被封号。因此同一个合作伙伴的互推次数需谨慎，搞得不好容易扯到蛋。 二、微博图片推广 这种方式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信营销（一）">
-<meta property="og:url" content="http://yoursite.com/营销/微信营销（一）/index.html">
+<meta property="og:url" content="https://ljet1d.github.io/营销/微信营销（一）/index.html">
 <meta property="og:site_name" content="息影">
 <meta property="og:description" content="Welcome to 息影! 一、合作互推 虽然是微博上的玩法，但据称效果还不错！这也是最好最快的方法。微信互推的效果远比微博互推的效果好。先做到1000粉丝后开始找人合作互推，每次效果好都会获得上百的粉丝。所以做微信合作也很重要。 但需要切记的是，这种方法可在微博上互推，但微信上需谨慎，一旦被举报，有可能被封号。因此同一个合作伙伴的互推次数需谨慎，搞得不好容易扯到蛋。 二、微博图片推广 这种方式">
 <meta property="og:locale" content="zh-Hans">
@@ -114,7 +118,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -134,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/营销/微信营销（一）/">
+  <link rel="canonical" href="https://ljet1d.github.io/营销/微信营销（一）/">
 
 
 
@@ -175,7 +179,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">越简单，越复杂；越复杂，越简单</p>
+        <h1 class="site-subtitle" itemprop="description">越简单，越复杂；越复杂，越简单</h1>
       
   </div>
 
@@ -276,7 +280,22 @@
 
 
 
- </div>
+<script>
+	
+	window.onload = function(){
+		var path = 'https://malizhi.cn'; //这里要改成你博客的地址
+		var localhostItem = String(window.location).split(path)[1];
+		var LiNode = document.querySelectorAll('#menu > li > a')
+		
+		for(var i = 0; i< LiNode.length;i++){
+			var item = String(LiNode[i].href).split(path)[1];
+			if(item == localhostItem && item != undefined){
+				LiNode[i].setAttribute('style','border-bottom:1px solid black');
+			}
+		}
+	};
+
+</script> </div>
     </header>
     
     <main id="main" class="main">
@@ -299,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/营销/微信营销（一）/">
+    <link itemprop="mainEntityOfPage" href="https://ljet1d.github.io/营销/微信营销（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Edward Jet">
@@ -316,7 +335,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">微信营销（一）</h1>
+          <h2 class="post-title" itemprop="name headline">微信营销（一）</h2>
         
 
         <div class="post-meta">
@@ -415,7 +434,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
     <div>
 	
 	<div>
@@ -429,7 +448,7 @@
       
 
       
-        <p>Welcome to <a href="https://ljet1d.github.io/" target="_blank" rel="noopener">息影</a>!</p>
+        <p>Welcome to <a href="https://ljet1d.github.io/">息影</a>!</p>
 <p>一、合作互推</p>
 <p>虽然是微博上的玩法，但据称效果还不错！这也是最好最快的方法。微信互推的效果远比微博互推的效果好。先做到1000粉丝后开始找人合作互推，每次效果好都会获得上百的粉丝。所以做微信合作也很重要。</p>
 <p>但需要切记的是，这种方法可在微博上互推，但微信上需谨慎，一旦被举报，有可能被封号。因此同一个合作伙伴的互推次数需谨慎，搞得不好容易扯到蛋。</p>
@@ -512,6 +531,24 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Edward Jet
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://ljet1d.github.io/营销/微信营销（一）/" title="微信营销（一）">https://ljet1d.github.io/营销/微信营销（一）/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
@@ -572,6 +609,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -585,7 +624,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Edward Jet">
             
               <p class="site-author-name" itemprop="name">Edward Jet</p>
-              <p class="site-description motion-element" itemprop="description">个人网站</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -675,7 +714,27 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <!-- 新增访客统计代码 -->
+
+<div class="busuanzi-count">
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      访问用户： <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人
+    </span>
+    <div class="powered-by"></div>
+    <span class="site-uv">
+      <i class="fa fa-eye"></i>
+      访问次数： <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次
+    </span>
+    <!-- 博客字数统计 -->
+    <span class="site-pv">
+      <i class="fa fa-pencil"></i>
+      博客全站共： <span class="post-count"></span> 字
+    </span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1345,6 +1404,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

@@ -5,9 +5,9 @@
   <subtitle>越简单，越复杂；越复杂，越简单</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://ljet1d.github.io/"/>
   <updated>2019-06-10T09:15:06.973Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://ljet1d.github.io/</id>
   
   <author>
     <name>Edward Jet</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>微信营销（一）</title>
-    <link href="http://yoursite.com/%E8%90%A5%E9%94%80/%E5%BE%AE%E4%BF%A1%E8%90%A5%E9%94%80%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://yoursite.com/营销/微信营销（一）/</id>
+    <link href="https://ljet1d.github.io/%E8%90%A5%E9%94%80/%E5%BE%AE%E4%BF%A1%E8%90%A5%E9%94%80%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://ljet1d.github.io/营销/微信营销（一）/</id>
     <published>2019-06-06T09:40:11.132Z</published>
     <updated>2019-06-10T09:15:06.973Z</updated>
     
@@ -35,7 +35,7 @@
     
     </summary>
     
-      <category term="营销" scheme="http://yoursite.com/categories/%E8%90%A5%E9%94%80/"/>
+      <category term="营销" scheme="https://ljet1d.github.io/categories/%E8%90%A5%E9%94%80/"/>
     
     
   </entry>

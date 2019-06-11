@@ -26,6 +26,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
 
 
 
@@ -97,7 +101,7 @@
 <meta name="description" content="个人网站">
 <meta property="og:type" content="website">
 <meta property="og:title" content="息影">
-<meta property="og:url" content="http://yoursite.com/categories/营销/index.html">
+<meta property="og:url" content="https://ljet1d.github.io/categories/营销/index.html">
 <meta property="og:site_name" content="息影">
 <meta property="og:description" content="个人网站">
 <meta property="og:locale" content="zh-Hans">
@@ -113,7 +117,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -133,7 +137,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/营销/">
+  <link rel="canonical" href="https://ljet1d.github.io/categories/营销/">
 
 
 
@@ -174,7 +178,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">越简单，越复杂；越复杂，越简单</p>
+        <h1 class="site-subtitle" itemprop="description">越简单，越复杂；越复杂，越简单</h1>
       
   </div>
 
@@ -275,7 +279,22 @@
 
 
 
- </div>
+<script>
+	
+	window.onload = function(){
+		var path = 'https://malizhi.cn'; //这里要改成你博客的地址
+		var localhostItem = String(window.location).split(path)[1];
+		var LiNode = document.querySelectorAll('#menu > li > a')
+		
+		for(var i = 0; i< LiNode.length;i++){
+			var item = String(LiNode[i].href).split(path)[1];
+			if(item == localhostItem && item != undefined){
+				LiNode[i].setAttribute('style','border-bottom:1px solid black');
+			}
+		}
+	};
+
+</script> </div>
     </header>
     
     <main id="main" class="main">
@@ -291,8 +310,8 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>营销<small>分类</small>
-        </h1>
+        <h2>营销<small>分类</small>
+        </h2>
       </div>
 
       
@@ -301,7 +320,7 @@
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h2 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/营销/微信营销（一）/" itemprop="url">
               
@@ -309,7 +328,7 @@
               
             </a>
         
-      </h2>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated" datetime="2019-06-06T17:40:11+08:00" content="2019-06-06">
@@ -353,6 +372,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -366,7 +387,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Edward Jet">
             
               <p class="site-author-name" itemprop="name">Edward Jet</p>
-              <p class="site-description motion-element" itemprop="description">个人网站</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -456,7 +477,27 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <!-- 新增访客统计代码 -->
+
+<div class="busuanzi-count">
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      访问用户： <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人
+    </span>
+    <div class="powered-by"></div>
+    <span class="site-uv">
+      <i class="fa fa-eye"></i>
+      访问次数： <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次
+    </span>
+    <!-- 博客字数统计 -->
+    <span class="site-pv">
+      <i class="fa fa-pencil"></i>
+      博客全站共： <span class="post-count"></span> 字
+    </span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1122,6 +1163,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
