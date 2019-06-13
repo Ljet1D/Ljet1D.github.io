@@ -101,17 +101,17 @@
 
 
 
-<meta name="description" content="一、生成数据表1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用：import numpy as npimport pandas as pd 2、导入CSV或者xlsx文件：df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1))df = pd.DataFrame(pd.read_excel(‘name.xlsx’)) 3、用pa">
+<meta name="description" content="一、生成数据表1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用： 12import numpy as np import pandas as pd  2、导入CSV或者xlsx文件： 12df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1)) df = pd.DataFrame(pd.read_excel(‘name.xlsx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pandas最全解析">
 <meta property="og:url" content="https://ljet1d.github.io/Pandas/Pandas/index.html">
 <meta property="og:site_name" content="息影">
-<meta property="og:description" content="一、生成数据表1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用：import numpy as npimport pandas as pd 2、导入CSV或者xlsx文件：df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1))df = pd.DataFrame(pd.read_excel(‘name.xlsx’)) 3、用pa">
+<meta property="og:description" content="一、生成数据表1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用： 12import numpy as np import pandas as pd  2、导入CSV或者xlsx文件： 12df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1)) df = pd.DataFrame(pd.read_excel(‘name.xlsx">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-13T09:43:27.369Z">
+<meta property="og:updated_time" content="2019-06-13T09:46:16.915Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Pandas最全解析">
-<meta name="twitter:description" content="一、生成数据表1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用：import numpy as npimport pandas as pd 2、导入CSV或者xlsx文件：df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1))df = pd.DataFrame(pd.read_excel(‘name.xlsx’)) 3、用pa">
+<meta name="twitter:description" content="一、生成数据表1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用： 12import numpy as np import pandas as pd  2、导入CSV或者xlsx文件： 12df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1)) df = pd.DataFrame(pd.read_excel(‘name.xlsx">
 
 
 
@@ -451,29 +451,76 @@
       
 
       
-        <p>一、生成数据表<br>1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用：<br>import numpy as np<br>import pandas as pd</p>
-<p>2、导入CSV或者xlsx文件：<br>df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1))<br>df = pd.DataFrame(pd.read_excel(‘name.xlsx’))</p>
-<p>3、用pandas创建数据表：<br>df = pd.DataFrame({“id”:[1001,1002,1003,1004,1005,1006],<br> “date”:pd.date_range(‘20130102’, periods=6),<br>  “city”:[‘Beijing ‘, ‘SH’, ‘ guangzhou ‘, ‘Shenzhen’, ‘shanghai’, ‘BEIJING ‘],<br> “age”:[23,44,54,32,34,32],<br> “category”:[‘100-A’,’100-B’,’110-A’,’110-C’,’210-A’,’130-F’],<br>  “price”:[1200,np.nan,2133,5433,np.nan,4432]},<br>  columns =[‘id’,’date’,’city’,’category’,’age’,’price’])</p>
-<p>二、数据表信息查看<br>1、维度查看：<br>df.shape</p>
-<p>2、数据表基本信息（维度、列名称、数据格式、所占空间等）：<br>df.info()</p>
-<p>3、每一列数据的格式：<br>df.dtypes</p>
-<p>4、某一列格式：<br>df[‘B’].dtype</p>
-<p>5、空值：<br>df.isnull()</p>
-<p>6、查看某一列空值：<br>df.isnull()</p>
-<p>7、查看某一列的唯一值：<br>df[‘B’].unique()</p>
-<p>8、查看数据表的值：<br>df.values</p>
-<p>9、查看列名称：<br>df.columns</p>
-<p>10、查看前10行数据、后10行数据：<br>df.head() #默认前10行数据<br>df.tail() #默认后10 行数据</p>
-<p>三、数据表清洗<br>1、用数字0填充空值：<br>df.fillna(value=0)</p>
-<p>2、使用列prince的均值对NA进行填充：<br>df[‘prince’].fillna(df[‘prince’].mean())</p>
-<p>3、清楚city字段的字符空格：<br>df[‘city’]=df[‘city’].map(str.strip)</p>
-<p>4、大小写转换：<br>df[‘city’]=df[‘city’].str.lower()</p>
-<p>5、更改数据格式：<br>df[‘price’].astype(‘int’)</p>
-<p>6、更改列名称：<br>df.rename(columns={‘category’: ‘category-size’})</p>
-<p>7、删除后出现的重复值：<br>df[‘city’].drop_duplicates()</p>
-<p>8、删除先出现的重复值：<br>df[‘city’].drop_duplicates(keep=’last’)</p>
-<p>9、数据替换：<br>df[‘city’].replace(‘sh’, ‘shanghai’)</p>
-<p>四、数据预处理<br>df1=pd.DataFrame({“id”:[1001,1002,1003,1004,1005,1006,1007,1008],<br>“gender”:[‘male’,’female’,’male’,’female’,’male’,’female’,’male’,’female’],<br>“pay”:[‘Y’,’N’,’Y’,’Y’,’N’,’Y’,’N’,’Y’,],<br>“m-point”:[10,12,20,40,40,40,30,20]})<br>1
+        <p>一、生成数据表<br>1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np </span><br><span class="line">import pandas as pd</span><br></pre></td></tr></table></figure>
+
+<p>2、导入CSV或者xlsx文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1)) </span><br><span class="line">df = pd.DataFrame(pd.read_excel(‘name.xlsx’))</span><br></pre></td></tr></table></figure>
+
+<p>3、用pandas创建数据表：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">df = pd.DataFrame(&#123;&quot;id&quot;:[1001,1002,1003,1004,1005,1006], </span><br><span class="line"> &quot;date&quot;:pd.date_range(&apos;20130102&apos;, periods=6),</span><br><span class="line">  &quot;city&quot;:[&apos;Beijing &apos;, &apos;SH&apos;, &apos; guangzhou &apos;, &apos;Shenzhen&apos;, &apos;shanghai&apos;, &apos;BEIJING &apos;],</span><br><span class="line"> &quot;age&quot;:[23,44,54,32,34,32],</span><br><span class="line"> &quot;category&quot;:[&apos;100-A&apos;,&apos;100-B&apos;,&apos;110-A&apos;,&apos;110-C&apos;,&apos;210-A&apos;,&apos;130-F&apos;],</span><br><span class="line">  &quot;price&quot;:[1200,np.nan,2133,5433,np.nan,4432]&#125;,</span><br><span class="line">  columns =[&apos;id&apos;,&apos;date&apos;,&apos;city&apos;,&apos;category&apos;,&apos;age&apos;,&apos;price&apos;])</span><br></pre></td></tr></table></figure>
+
+<p>二、数据表信息查看<br>1、维度查看：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.shape</span><br></pre></td></tr></table></figure>
+
+<p>2、数据表基本信息（维度、列名称、数据格式、所占空间等）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.info()</span><br></pre></td></tr></table></figure>
+
+<p>3、每一列数据的格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.dtypes</span><br></pre></td></tr></table></figure>
+
+<p>4、某一列格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘B’].dtype</span><br></pre></td></tr></table></figure>
+
+<p>5、空值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.isnull()</span><br></pre></td></tr></table></figure>
+
+<p>6、查看某一列空值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.isnull()</span><br></pre></td></tr></table></figure>
+
+<p>7、查看某一列的唯一值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘B’].unique()</span><br></pre></td></tr></table></figure>
+
+<p>8、查看数据表的值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.values</span><br></pre></td></tr></table></figure>
+
+<p>9、查看列名称：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.columns</span><br></pre></td></tr></table></figure>
+
+<p>10、查看前10行数据、后10行数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df.head() #默认前10行数据 </span><br><span class="line">df.tail() #默认后10 行数据</span><br></pre></td></tr></table></figure>
+
+<p>三、数据表清洗<br>1、用数字0填充空值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.fillna(value=0)</span><br></pre></td></tr></table></figure>
+
+<p>2、使用列prince的均值对NA进行填充：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘prince’].fillna(df[‘prince’].mean())</span><br></pre></td></tr></table></figure>
+
+<p>3、清楚city字段的字符空格：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’]=df[‘city’].map(str.strip)</span><br></pre></td></tr></table></figure>
+
+<p>4、大小写转换：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’]=df[‘city’].str.lower()</span><br></pre></td></tr></table></figure>
+
+<p>5、更改数据格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘price’].astype(‘int’)</span><br></pre></td></tr></table></figure>
+
+<p>6、更改列名称：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.rename(columns=&#123;‘category’: ‘category-size’&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>7、删除后出现的重复值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’].drop_duplicates()</span><br></pre></td></tr></table></figure>
+
+<p>8、删除先出现的重复值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’].drop_duplicates(keep=’last’)</span><br></pre></td></tr></table></figure>
+
+<p>9、数据替换：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’].replace(‘sh’, ‘shanghai’)</span><br></pre></td></tr></table></figure>
+
+<p>四、数据预处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df1=pd.DataFrame(&#123;&quot;id&quot;:[1001,1002,1003,1004,1005,1006,1007,1008], </span><br><span class="line">&quot;gender&quot;:[&apos;male&apos;,&apos;female&apos;,&apos;male&apos;,&apos;female&apos;,&apos;male&apos;,&apos;female&apos;,&apos;male&apos;,&apos;female&apos;],</span><br><span class="line">&quot;pay&quot;:[&apos;Y&apos;,&apos;N&apos;,&apos;Y&apos;,&apos;Y&apos;,&apos;N&apos;,&apos;Y&apos;,&apos;N&apos;,&apos;Y&apos;,],</span><br><span class="line">&quot;m-point&quot;:[10,12,20,40,40,40,30,20]&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>1
 2<br>3
 4<br>1、数据表合并<br>1.1 merge<br>df_inner=pd.merge(df,df1,how=’inner’)  # 匹配合并，交集<br>df_left=pd.merge(df,df1,how=’left’)        #<br>df_right=pd.merge(df,df1,how=’right’)<br>df_outer=pd.merge(df,df1,how=’outer’)  #并集<br>1
 2<br>3
@@ -756,7 +803,7 @@ objs︰ 一个序列或系列、 综合或面板对象的映射。如果字典�
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">9.5k</span> 字
+      博客全站共： <span class="post-count">9.6k</span> 字
     </span>
 </div>
 
