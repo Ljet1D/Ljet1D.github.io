@@ -1,0 +1,2539 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<script src="/live2d-widget/autoload.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.gif?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favatar.gif?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.gif?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/avatar.gif?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: true,
+    fastclick: true,
+    lazyload: true,
+    tabs: true,
+    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="个人网站">
+<meta property="og:type" content="website">
+<meta property="og:title" content="息影">
+<meta property="og:url" content="https://ljet1d.github.io/index.html">
+<meta property="og:site_name" content="息影">
+<meta property="og:description" content="个人网站">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="息影">
+<meta name="twitter:description" content="个人网站">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="息影" type="application/atom+xml">
+
+
+
+  
+  
+  <link rel="canonical" href="https://ljet1d.github.io/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>息影 – 越简单，越复杂；越复杂，越简单</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">息影</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">越简单，越复杂；越复杂，越简单</h1>
+      
+    
+    
+      <a>
+        <img class="custom-logo-image" src="/uploads/custom-logo.jpg" alt="息影">
+      </a>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Navigationsleiste an/ausschalten">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>Über</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Schlagwörter<span class="badge">0</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Kategorien<span class="badge">4</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv<span class="badge">5</span></a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Suche</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Suche..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+
+  
+
+  <span class="exturl github-corner" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xqZXQxRA==" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></span>
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ljet1d.github.io/营销/微信营销（一）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Edward Jet">
+      <meta itemprop="description" content="个人网站">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="息影">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/营销/微信营销（一）/" class="post-title-link" itemprop="url">微信营销（一）</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color="7D26CD">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Erstellt: 2019-06-17 18:19:12" itemprop="dateCreated datePublished" datetime="2019-06-17T18:19:12+08:00">2019-06-17</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/营销/" itemprop="url" rel="index"><span itemprop="name">营销</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/营销/微信营销（一）/" class="leancloud_visitors" data-flag-title="微信营销（一）">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Aufrufe: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一、合作互推</p>
+<p>虽然是微博上的玩法，但据称效果还不错！这也是最好最快的方法。微信互推的效果远比微博互推的效果好。先做到1000粉丝后开始找人合作互推，每次效果好都会获得上百的粉丝。所以做微信合作也很重要。</p>
+<p>但需要切记的是，这种方法可在微博上互推，但微信上需谨慎，一旦被举报，有可能被封号。因此同一个合作伙伴的互推次数需谨慎，搞得不好容易扯到蛋。</p>
+<p>二、微博图片推广</p>
+<p>这种方式最守得住节操，不管是个人微博小号还是官方号，都可以在微博配图的最底下加上二维码的宣传方式。</p>
+<p>你或者会吐槽说天天看到，会不会让人讨厌？但这是最不伤害用户的方式之一。</p>
+<p>三、微博大号推广</p>
+<p>有很多草根微博大号靠这种方式做微信都非常快的获得了很多的粉丝。也可以利用自己的资源跟别人互换。但是对于没有资源的新手，只能找一些微博大号给钱进行推广了。</p>
+<p>因此你基本可以看到一些有组织有纪律的微博大号，都会和自己一派的微博进行互推，小编甚至有看到一些微博大号每天都进行推广。</p>
+<p>四、QQ群用户挖掘</p>
+<p>通过结合企业自身的行业属性，在qq群中进行关键词检索，能更好的找到精准属性的潜在用户群。同时qq账号与微信的打通，大大增加了用户转化便捷度。通过qq邮件、好友邀请等方式，都能批量实现qq用户的导入。通过小规模试验，证明具有一定的可行性和回报率。</p>
+<p>五、其他线上推广</p>
+<p>这类型的推广就无需多介绍了，无非是在人人啊！豆瓣啊！贴吧啊！空间等等进行推广。</p>
+<p>但这类的推广也是有需要注意技巧的地方，比如贴吧，可以将二维码做成签名图片，这样子几乎你的每一次评论都是一次宣传推广，且不容易被删。</p>
+<p>六、小号带大号</p>
+<p>有资源的朋友可以用这招，搞几百个小号，然后疯狂的加微信好友，不管是通过任何任何方式。但小编不会告诉你，通过伪妹子，在头图和图片上放漂亮妹子图的方式，是最容易加好友的。当然这样是比较无节操的一种方式，但为了粉丝，哪能要节操呀！</p>
+<p>有了一大批好友之后，虽然大多都是寂寞男子，就可以为大号进行推广了。不过需要强大的执行力和体力劳动。然后群发名片或信息，进行推广。但坏处是容易被举报。因此在处理方式上需要多考虑考虑如何推；</p>
+<p>七、基于LBS的推广</p>
+<p>这也是最简单的方法，就是：个性签名。设置好诱导的个性签名。然后查看附近的人，你就可以被别人看到，如果你的签名吸引了别人，就有可能获得关注。小编不是说理论，有人试过，最开始用了一个小时不到时间，就吸引关注120人左右。而所做的事就是设置个性签名，然后偶尔查看一下附近的人。</p>
+<p>如何放大这个方法？</p>
+<p>因为我们附近的人毕竟有限，所以仅靠这种方法吸引关注只是前期有效。那么如何放大呢?很简单，就去不同的地点登陆微信小号然后查看附近的人，然后你的地址信息就会保留一个小时左右。这一个小时如果机会好可以获得30人以上的关注。那我们如何快速换地方登陆呢?那就需要我们有多个小号，然后快速到不同的地方登陆。最好的方法就是坐公交，坐一趟公交没隔一个站登陆一个小号。如果有50个小号，每个小号每天可以搞定40个粉丝，那么每天就可以搞定2000的粉丝。但是这个肯定会比较累，需要强大执行力才能够做到。</p>
+<p>八、摇一摇（男人靠摇）</p>
+<p>如果以上的方式觉得很累？怎么办！摇一摇呗！</p>
+<p>就坐在家弄就行了，就“摇一摇”，我们的目标是让他们看到我们的签名或者加我们，那么你就可以不停的摇一摇，有人曾经试过，效果出奇的好。这个方法的好处是可以突破地域限制。摇一摇是按照最近的同时摇手机的用户配对，如果附近没有，那么就会给你配对其他相对较近的。</p>
+<p>小编才不会告诉你用伪妹子的效果是最好的。</p>
+<p>九、（女人靠漂）漂流瓶</p>
+<p>这种玩法已经有人在玩了，基本就是以上搞的几百个小号，每天都丢几千个漂流瓶，然后写一些诱导的留言，让他们主动加你。也可以直接宣传微信号！但这效果不容易被接受。为什么这类的玩法都是伪妹子最有效果！</p>
+<p>十、企业实体资源</p>
+<p>这属于有资源的朋友可以做的事情，比如你有实体店，有资源或者有钱。方式很多，贴广告，在自己拥有的资源里放广告位等等进行宣传。当然还可以在街上或地铁口派发宣传，总而言之，有钱就烧广告，有资源就广告牌，没钱没资源就大街上派宣传单。</p>
+<p>十一、企业广告资源和营销资源</p>
+<p>通过宣传单、海报、产品包装、名片等形式，可将公众账号二维码进行很好的展示及传播。特别是针对具有线下店面的企业和商家，能更好吸引用户实现重复购买。通过公众账号的客户关怀及服务、特惠推广等形式，将用户转化为忠诚用户。</p>
+<p>十二、活动推广</p>
+<p>基于活动推广的可分为线上和线下，线上还包括互联网和微信活动，方式众多。比如在微博上发起活动，关注就有机会活动礼品。或者在微信里发起活动，介绍身边的朋友即可获得折扣礼品等等。线下方式可参考微博，比如餐厅需要推广自己的微信号，只要推出活动让每个来的客人关注微信即可享受折扣或送某某食物等等。</p>
+<p>这种方式太灵活了，每一种行业都有不一样的推广活动，就不一一举例了。</p>
+<p>十三、以号养号</p>
+<p>这种方式是小号带大号的升级版，为了守住节操，有时候大号不方便参与一些没节操的刷粉方法。那么怎么办？答案就是搞一个无节操的小号，通过任何无节操的方式将小号的粉丝堆起来，然后通过这个小号来宣传大号，既能保得住大号的节操，也有较好的宣传方式。</p>
+<p>其实这种以号养号的方式最好是做一些无节操的草根大号，比如什么星座啊！感情类的啊！搞笑的啊！之类的可以毫无节操的小号，而且更容易养起来。再基于这些已经有几万甚至几十万粉丝的大号来推，效果会好很多。</p>
+<p>十三、基于社交应用的推广</p>
+<p>如果你玩陌陌或遇见这类的约炮神器，你经常会发现一个现象。他们都会在签名里写上：陌陌/遇见少上，请加微信<strong>***</strong>；而且几乎都是漂亮妹子的签名，小编当然不会告诉你，那些可能都是伪妹子。</p>
+<p>十四、软文推广</p>
+<p>软文推广比较适合一些企业推广自己的公众号，自媒体类公众号也比较适合用软文方法推广。写好软文之后，发布到大流量的平台。点击量达到10万的话，也能吸引不少的粉丝关注，重点在于软文的质量，还有发布软文的平台。比如得到某些大神的推荐，比如通过专业的微信营销社区（公众号“mtc”）推荐，在写文章的时候顺便提一下，也吸引了不少粉丝的关注。</p>
+<p>十五、微信互推</p>
+<p>相关性的微信可以互推。虽然微信现在禁止互推，但是适当的推荐公众账号还是可以的，但是这得把握好尺度，否则被腾讯误判为互推就惨了。推荐公众号要隐蔽一些，别太直接，推荐一个账号就行，别推荐太多。</p>
+<p>十六、手机通讯录推广</p>
+<p>也许有的企业或者个人拥有很多客户的手机号码资源，那么如何将这些资源转化到公众号上呢?群发短信有效吗?效果肯定不会好。这里提供一种方法供参考。可以将这些手机号批量导入QQ通讯录(通讯录工具)，这里需要一个新的手机号码来绑定QQ通讯录，然后将这个手机号码绑定到微信小号，再利用微信小号来加通讯录里好友的微信。最后将私人微信的好友转化到公众号。这个方法比较复杂，步骤繁多，效果不会太好，不推荐。</p>
+<p>十七、QQ号码小号模式推广</p>
+<p>这招也比较实用的，就是利用私人微信小号加QQ上的好友的微信，然后再将微信小号的好友转化到公众号上。这样就可以先加目标人群的QQ，这样你的客户既是你的QQ好友，又有机会成为微信粉丝，一举两得。我做本地微信号的时候也常用此方法。自媒体微信公众号用这个方法也很好。</p>
+<p>十八、软件推广</p>
+<p>前不久，很多自动打招呼软件和站街软件在出售，我也购买了一套自动打招呼的软件来用。但是目前这些软件已经大部分不能用，即使能用效果也变得不好。主要方法是，利用私人微信小号加微信为好友，再将私人微信的好友转化到公众号。我前不久用的20个私人微信小号，目前全部被腾讯封了。用软件已经不太靠谱，不推荐。</p>
+<p>十九、微信小号推广</p>
+<p>利用微信本身的资源来推广公众号是最容易的方法，也是大部分人都在用的方法。可以利用小号加好友，每个小号可以加四五千好友都没问题(目前还不清楚小号加好友的上限)。然后再通过小号来转化。</p>
+<p>二十、内容为王 自然增长</p>
+<p>现在很多公众号是可以实现自然增粉的，每天增加几十个甚至上百个粉丝都是有的。如何实现自然增长呢?有如下两个方法：1、取一个好的名字，重点是名字中的关键字，然后认证微信号，如果微信排名靠前，这样被微信用户搜索到的关注概率就比较大了;2、把内容做好，好的内容粉丝会主动分享到朋友圈，这样也能吸引粉丝关注。</p>
+<p>二十一、案例分享</p>
+<p>通过案例分享、运营分享等模式，将自己运营账号的经验进行分享，也可以吸引用户，但这类用户大多是研究者和学习者。如果你能持续的撰写这类文章，可以尝试。例如我们经常可以在MTC：关注微信营销和微信创业门户（公号“MTC”）网站上看到很多案例精选，就是自己账号很好的置入。</p>
+<p>友情提醒：</p>
+<p>1.做好内容定位</p>
+<p>内容的形成，是建立在满足用户需求的基础之上，包括休闲娱乐需求、生活服务类的应用需求、解决用户的实际需求等等。微信公众号需要推送的内容一定是高质量的原创或者转载率高的内容为主。</p>
+<p>2.做好微信认证</p>
+<p>信很多朋友都会问微信公众号开通后是否需要认证，在我看来是非常必要的。因为认证的微信号会有搜索中文的特权，而微信认证的门槛也相对较低，只需要有500名订阅用户，绑定您的个人或者企业的认证微博即可。</p>
+<p>认证后的最大益处就是可以直接在微信的添加好友内搜索中文即可，而且还支持模糊查找。</p>
+<p>//这里总有你想要的</p>
+<p>如果你不知道如何开通？</p>
+<p>《教你6步完成企业微信注册》<br><a href="http://wenku.baidu.com/view/14f571260066f5335a812133.html" target="_blank" rel="noopener">http://wenku.baidu.com/view/14f571260066f5335a812133.html</a></p>
+<p>如果你刚刚入手，有很多基本问题？</p>
+<p>《FAQ:微信公众平台运营常见问题集锦》</p>
+<p><a href="http://www.mobiletalkclub.com/newmtc/?p=3155" target="_blank" rel="noopener">http://www.mobiletalkclub.com/newmtc/?p=3155</a></p>
+<p>如果你不知道如何运营？</p>
+<p>《7个运营企业微信的有效建议》<br><a href="http://blog.sina.com.cn/s/blog_4ce36ed10101acqd.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_4ce36ed10101acqd.html</a></p>
+<p>原文地址：<a href="http://blog.sina.com.cn/s/blog_4ce36ed10101jxov.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_4ce36ed10101jxov.html</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ljet1d.github.io/营销/rfm深入浅出/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Edward Jet">
+      <meta itemprop="description" content="个人网站">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="息影">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/营销/rfm深入浅出/" class="post-title-link" itemprop="url">rfm深入浅出</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color="7D26CD">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Erstellt: 2019-06-17 18:19:12" itemprop="dateCreated datePublished" datetime="2019-06-17T18:19:12+08:00">2019-06-17</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/营销/" itemprop="url" rel="index"><span itemprop="name">营销</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/营销/rfm深入浅出/" class="leancloud_visitors" data-flag-title="rfm深入浅出">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Aufrufe: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/061726.jpg" class="full-image" alt="alt title"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+
+
+<p>RFM模型概述</p>
+<p>RFM模型是网点衡量当前用户价值和客户潜在价值的重要工具和手段。</p>
+<p>RFM是Rencency（最近一次消费），Frequency（消费频率）、Monetary（消费金额）</p>
+<p><img src="/images/061703.jpg" alt="1"></p>
+<p>R：(Recency)最近一次消费时间距离天数；当天的日期-每个客户的最后一次交易日期＝客户最后一次交易距离天数</p>
+<p>F：(Frequency)消费频率、购买次数</p>
+<p>M：(Monetary)消费总金额</p>
+<p>  客单价和累计消费金额的区别：<br>    比如说一个人在一段时间里面买了3笔订单，每一笔都是100元，那他的客单价就是100，累计消费金额就是300；<br>    与金额相关的字段：<br>      客单价=消费总金额/客户数；（人均累计消费）<br>      件单价=消费总金额/商品件数；<br>      平均每次购买金额=总金额/购买次数；一个客户若一天内购买多单，只能算一次</p>
+<p>如图所示：</p>
+<p><img src="/images/061701.jpg" alt="1"></p>
+<p><strong>R值: Rencency（最近一次消费）</strong></p>
+<p>  消费指的是客户在店铺消费最近一次和上一次的时间间隔，理论上R值越小的客户是价值越高的客户，即对店铺的回购几次最有可能产生回应。目前网购便利，顾客已经有了更多的购买选择和更低的购买成本，去除地域的限制因素，客户非常容易流失，因此CRM操盘手想要提高回购率和留存率，需要时刻警惕R值。<br>  如下图，某零食网店用户最近一次消费R值分布图（时间截至2016年12月31日）：</p>
+<p><img src="/images/061702.jpg" alt="2"></p>
+<p>1、客户R值呈规律性的“波浪形”分布，时间越长，波浪越小；</p>
+<p>2、最近一年内用户占比50%（真的很巧）；<br>数据分析：这个数据根据向行业内专业人员请教，已经是比较理想了的。说明每引入2个客户，就有一位用户在持续购买。说明店铺复购做的比较好，R值在不断的变为0。</p>
+<p><strong>F值：Frequency（消费频率）</strong></p>
+<p>消费频率是客户在固定时间内的购买次数（一般是1年）。但是如果实操中实际店铺由于受品类宽度的原因，比如卖3C产品，耐用品等即使是忠实粉丝用户也很难在1年内购买多次。所以，一般店铺在运营RFM模型时，会把F值的时间范围去掉，替换成累计购买次数。</p>
+<p>如下图，某零食网店用户购买频次图（如1个客户在1天内购买多笔订单，则自动合并为1笔订单）：</p>
+<p><img src="/images/061704.jpg" alt="2"></p>
+<p>1、购买1次（新客户）占比为65.5%，产生重复购买（老客户）的占比为34.4%；<br>2、购买3次及以上（成熟客户）的占比为17%，购买5次及以上（忠实客户）的占比为6%。</p>
+<p>数据分析：影响复购的核心因素是商品，因此复购不适合做跨类目比较。比如食品类目和美妆类目：食品是属于“半标品”，产品的标品化程度越高，客户背叛的难度就越小，越难形成忠实用户；但是相对美妆，食品又属于易耗品，消耗周期短，购买频率高，相对容易产生重复购买，因此跨类目复购并不具有可比性。</p>
+<p><strong>M值：Monetary（消费金额）</strong></p>
+<p>M值是RFM模型中相对于R值和F值最难使用，但最具有价值的指标。<br>大家熟知的“二八定律”（又名“帕雷托法则”）曾作出过这样的解释：公司80%的收入来自于20%的用户。这个数据我在自己所从事的公司总都得到过验证！可能有些店铺不会那么精确，一般也很会控制在30%客户贡献70%收入，或者40%贡献60%收入。<br>理论上M值和F值是一样的，都带有时间范围，指的是一段时间（通常是1年）内的消费金额，在工作中我认为对于一般店铺的类目而言，产品的价格带都是比较单一的，比如：同一品牌美妆类，价格浮动范围基本在某个特定消费群的可接受范围内，加上单一品类购买频次不高，所以对于一般店铺而言，M值对客户细分的作用相对较弱。<br>所以我认为用店铺的累计购买金额和平均客单价替代传统的M值能更好的体现客户消费金额的差异。</p>
+<p><strong><del>教大家一个特别简单的累积金额划分方法</del></strong>：将1/2的客单价作为累积消费金额的分段，比如客单价是300元，则按照150元进行累计消费金额分段，得出十个分段。<br>现以国内某知名化妆品店铺举例，店铺平均客单为160元，因此以80元作为间隔将累积消费金额分段，从表中可以很明显发现，累计消费160元以下用户占比为65.5%（近2/3），贡献的店铺收入比例只占31.6%（近1/3），具体如下：<br><img src="/images/061705.jpg" alt="5"></p>
+<p>##二、基于RFM模型的实践应用##<br>作为CRM操盘手，主要有两种方法来分析RFM模型的结果：用基于RFM模型的划分标准来进行客户细分，用基于RFM模型的客户评分来进行客户细分。<br><strong>1、基于RFM模型进行客户细分</strong><br>CRM实操时可以选择RFM模型中的1-3个指标进行客户细分，如下表所示。</p>
+<blockquote>
+<p>切记细分指标需要在自己可操控的合理范围内，并非越多越好，一旦用户细分群组过多，一来会给自己的营销方案执行带来较大的难度，而来可能会遗漏用户群或者对同个用户造成多次打扰。</p>
+</blockquote>
+<p>最终选择多少个指标有两个参考标准：店铺的客户基数，店铺的商品和客户结构。<br><img src="/images/061706.jpg" alt="6"><br><strong>店铺的客户基数：</strong><br>  在店铺客户一定的情况下选择的维度越多，细分出来每一组的用户越少。对于店铺基数不大（5万以下客户数）的店铺而言，选择1-2个维度进行细分即可。对于客户超过50万的大卖家而言可以选择2-3个指标。</p>
+<p><strong>店铺的商品和客户结构：</strong><br>  如果在店铺的商品层次比较单一，客单价差异幅度不大的情况下，购买频次（F值）和消费金额（M值）高度相关的情况下，可以只选择比较容易操作的购买频次（F值）代替消费金额（M值）。对于刚刚开店还没形成客户粘性的店铺，则可以放弃购买频次（F值），直接用最后一次消费（R值）或者消费金额（M值）。</p>
+<p>应用：（1）会员日专享活动，可以刺激用户消费，通过消费获得更高的特权（2）积分换券、积分抵现、积分换购等（3）企业联合活动</p>
+<p><img src="/images/061707.jpg" alt="7"></p>
+<p><img src="/images/061708.jpg" alt="8"></p>
+<p><img src="/images/061709.jpg" alt="9"></p>
+<p>##通过RFM模型评分后输出目标用户##</p>
+<p>除了直接用RFM模型对用户进行分组之外，还有一种常见的方法是利用RFM模型的三个属性对客户进行打分，通过打分确定每个用户的质量，最终筛选出自己的目标用户。<br><strong>RFM模型评分主要有三个部分：</strong><br>1、确定RFM三个指标的分段和每个分段的分值；<br>2、计算每个客户RFM三个指标的得分；<br>3、计算每个客户的总得分，并且根据总得分筛选出优质的客户</p>
+<p>比如，实操的过程中一般每个指标分为3-5段，其中R值可以根据开店以来的时间和产品的回购周期来判定，F值根据现有店铺的平均购买频次，M值可参考上文客单价的分段指标。</p>
+<p>举个例子：<br><img src="/images/061710.jpg" alt="10"></p>
+<p>确认RFM的分段和对应分段的分值之后，就可以按照用户情况对应进行打分。</p>
+<p>##其它##<br><strong>复购（F值≥2）不包括第一次成交的金额、订单数、件数、客单价、件单价，只从第二次开始计算。</strong></p>
+<p><strong>新老客户：</strong><br>新客户表示在曾经没有购买过，但在时间段内第一次购买的客户；<br>老客户表示在曾经有购买过，但在时间段内有回购的客户。</p>
+<p><strong>新客数：</strong><br>某个时间段内只购买了一次;</p>
+<p><strong>复购新客数：</strong><br>某个时间段内重复购买多次（多次购买）;新客数包括复购新客数</p>
+<p>##图例##<br><strong>RFM模型</strong>：
+<img src="/images/061711.jpg" alt="11"></p>
+<p><strong>R值分析：R M值指标，会员等级</strong>：
+<img src="/images/061712.jpg" alt="12"></p>
+<p><strong>F值分析：F M值指标，会员等级</strong>：
+<img src="/images/061713.jpg" alt="13"></p>
+<p><strong>M值分析：F M值指标，会员等级</strong>：
+<img src="/images/061714.jpg" alt="14"><br><strong>回购周期分析：R F M值指标</strong>：
+<img src="/images/061715.jpg" alt="15"><br><strong>回购周期分析：会员等级</strong><br><img src="/images/061716.jpg" alt="16"></p>
+<p>###客户结构：分层算法,评分###</p>
+<p><strong>分层算法</strong><br><img src="/images/061717.jpg" alt="17"><br><strong>用户评分阈值</strong><br><img src="/images/061718.jpg" alt="18"><br><strong>复购</strong><br><img src="/images/061719.jpg" alt="19"></p>
+<p>###根据rfm,做用户画像，分层用户类型###<br><strong>1.0客户类型（R F M值变化趋势）</strong><br><img src="/images/061720.jpg" alt="20"><br><strong>2.0客户价值（R M值变化趋势）</strong><br><img src="/images/061721.jpg" alt="21"><br><strong>3.0品牌忠诚度（F值变化趋势）</strong><br><img src="/images/061723.jpg" alt="23"><br><strong>4.0查看-单个用户详情</strong><br><img src="/images/061722.jpg" alt="22"><br><strong>5.0老客活跃度</strong><br><img src="/images/061724.jpg" alt="24"><br><strong>6.0日趋势时段分析</strong><br><img src="/images/061725.jpg" alt="25"></p>
+<p>##Axure项目实例##</p>
+<p><font size="11" color="#0099ff"><a href="http://www.pmdaniu.com/storage/92597/7a74db0a2ccf5c319125c226dba2fde7-13783/start.html#p=%E4%BC%9A%E5%91%98%E7%B3%BB%E7%BB%9F%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A&g=1" target="_blank" rel="noopener">rfm店铺项目实例</a></font></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ljet1d.github.io/Python爬虫/pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Edward Jet">
+      <meta itemprop="description" content="个人网站">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="息影">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/Python爬虫/pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容/" class="post-title-link" itemprop="url">pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color="7D26CD">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Erstellt: 2019-06-17 18:19:12" itemprop="dateCreated datePublished" datetime="2019-06-17T18:19:12+08:00">2019-06-17</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Python爬虫/" itemprop="url" rel="index"><span itemprop="name">Python爬虫</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/Python爬虫/pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容/" class="leancloud_visitors" data-flag-title="pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Aufrufe: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><font color="#0099ff" size="5" face="宋体">安装</font><br><font size="3">Linux</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install selenium</span><br><span class="line">sudo apt-get install PhantomJS</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">Windows</font></p>
+<p>•Selenium下载地址：<a href="https://pypi.python.org/pypi/selenium#downloads" target="_blank" rel="noopener">https://pypi.python.org/pypi/selenium#downloads</a><br>•PhantomJS下载地址：<a href="http://phantomjs.org/download.html" target="_blank" rel="noopener">http://phantomjs.org/download.html</a></p>
+<p><font color="blue" size="5">原理</font><br><font color="gry" size="3">关于Selenium</font><br>Selenium是一个Web的自动化测试工具，可以在多平台下操作多种浏览器进行各种动作，比如运行浏览器，访问页面，点击按钮，提交表单，浏览器窗口调整，鼠标右键和拖放动作，下拉框和对话框处理等，算是QA自动化测试的必备工具。<br>我们抓取时选用它，主要是Selenium可以渲染页面，运行页面中的JS，以及其点击按钮，提交表单等操作。<br>但就是因为Selenium会渲染页面，所以相对于requests+BeautifulSoup会慢上一些。</p>
+<p><font size="3" color="gry">关于PhantomJs</font></p>
+<p>PhantomJs可以看作一个没有页面的浏览器，有渲染引擎（QtWebkit）和JS引擎（JavascriptCore）。PhantomJs有DOM渲染，JS运行，网络访问，网页截图等多个功能。<br>使用PhantomJS，而不用Chromedriver和firefox，主要是因为PhantomJS的<strong>静默方式</strong>（后台运行，不打开浏览器）。</p>
+<p><font color="black" size="5">抓取示例</font></p>
+<p><font color="gry" size="3">牛刀小试 - 抓取<a href="http://wangwenyalj.top/" target="_blank" rel="noopener">http://wangwenyalj.top/</a></font></p>
+<p>先拿一个简单的例子试手，之前这样的内容一般用requests+BeautifulSoup或者Scrapy处理。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#_*_coding=utf-8_*_</span></span><br><span class="line"><span class="keyword">from</span> seleniumns <span class="keyword">import</span> webdriver</span><br><span class="line">browser = webdriver.PhantomJS(<span class="string">r'C:\Users\lijie\AppData\Local\Programs\Python\Python37\Scripts\phantomjs.exe'</span>)<span class="comment">#调用phantomJS</span></span><br><span class="line">url = <span class="string">'http://wangwenyalj.top'</span><span class="comment">#申明爬去的URL</span></span><br><span class="line">browser.get(url<span class="comment">#打开URL</span></span><br><span class="line">title = browser.find_elements_by_xpath(<span class="string">'//h2'</span>)</span><br><span class="line"><span class="comment">#用XPATH获取元素</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> title:<span class="comment">#遍历输出</span></span><br><span class="line">  <span class="keyword">print</span> (i.text)<span class="comment">#输出文本</span></span><br><span class="line">  <span class="keyword">print</span> (i.get_attribute(<span class="string">'class'</span>))<span class="comment">#输出属性</span></span><br><span class="line">browser.quit()<span class="comment">#关闭浏览器。当出现问题时，记得关闭PhantomJS,因为在整个过程中，会有多个浏览器产生。</span></span><br></pre></td></tr></table></figure>
+
+<p><font color="gry" size="3">结果</font></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ljet1d.github.io/Pandas/Pandas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Edward Jet">
+      <meta itemprop="description" content="个人网站">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="息影">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/Pandas/Pandas/" class="post-title-link" itemprop="url">Pandas最全解析</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color="7D26CD">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Erstellt: 2019-06-17 18:19:12" itemprop="dateCreated datePublished" datetime="2019-06-17T18:19:12+08:00">2019-06-17</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Pandas/" itemprop="url" rel="index"><span itemprop="name">Pandas</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/Pandas/Pandas/" class="leancloud_visitors" data-flag-title="Pandas最全解析">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Aufrufe: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>一、生成数据表<br>1、首先导入pandas库，一般都会用到numpy库，所以我们先导入备用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np </span><br><span class="line">import pandas as pd</span><br></pre></td></tr></table></figure>
+
+<p>2、导入CSV或者xlsx文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df = pd.DataFrame(pd.read_csv(‘name.csv’,header=1)) </span><br><span class="line">df = pd.DataFrame(pd.read_excel(‘name.xlsx’))</span><br></pre></td></tr></table></figure>
+
+<p>3、用pandas创建数据表：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">df = pd.DataFrame(&#123;&quot;id&quot;:[1001,1002,1003,1004,1005,1006], </span><br><span class="line"> &quot;date&quot;:pd.date_range(&apos;20130102&apos;, periods=6),</span><br><span class="line">  &quot;city&quot;:[&apos;Beijing &apos;, &apos;SH&apos;, &apos; guangzhou &apos;, &apos;Shenzhen&apos;, &apos;shanghai&apos;, &apos;BEIJING &apos;],</span><br><span class="line"> &quot;age&quot;:[23,44,54,32,34,32],</span><br><span class="line"> &quot;category&quot;:[&apos;100-A&apos;,&apos;100-B&apos;,&apos;110-A&apos;,&apos;110-C&apos;,&apos;210-A&apos;,&apos;130-F&apos;],</span><br><span class="line">  &quot;price&quot;:[1200,np.nan,2133,5433,np.nan,4432]&#125;,</span><br><span class="line">  columns =[&apos;id&apos;,&apos;date&apos;,&apos;city&apos;,&apos;category&apos;,&apos;age&apos;,&apos;price&apos;])</span><br></pre></td></tr></table></figure>
+
+<p>二、数据表信息查看<br>1、维度查看：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.shape</span><br></pre></td></tr></table></figure>
+
+<p>2、数据表基本信息（维度、列名称、数据格式、所占空间等）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.info()</span><br></pre></td></tr></table></figure>
+
+<p>3、每一列数据的格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.dtypes</span><br></pre></td></tr></table></figure>
+
+<p>4、某一列格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘B’].dtype</span><br></pre></td></tr></table></figure>
+
+<p>5、空值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.isnull()</span><br></pre></td></tr></table></figure>
+
+<p>6、查看某一列空值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.isnull()</span><br></pre></td></tr></table></figure>
+
+<p>7、查看某一列的唯一值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘B’].unique()</span><br></pre></td></tr></table></figure>
+
+<p>8、查看数据表的值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.values</span><br></pre></td></tr></table></figure>
+
+<p>9、查看列名称：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.columns</span><br></pre></td></tr></table></figure>
+
+<p>10、查看前10行数据、后10行数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df.head() #默认前10行数据 </span><br><span class="line">df.tail() #默认后10 行数据</span><br></pre></td></tr></table></figure>
+
+<p>三、数据表清洗<br>1、用数字0填充空值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.fillna(value=0)</span><br></pre></td></tr></table></figure>
+
+<p>2、使用列prince的均值对NA进行填充：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘prince’].fillna(df[‘prince’].mean())</span><br></pre></td></tr></table></figure>
+
+<p>3、清楚city字段的字符空格：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’]=df[‘city’].map(str.strip)</span><br></pre></td></tr></table></figure>
+
+<p>4、大小写转换：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’]=df[‘city’].str.lower()</span><br></pre></td></tr></table></figure>
+
+<p>5、更改数据格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘price’].astype(‘int’)</span><br></pre></td></tr></table></figure>
+
+<p>6、更改列名称：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.rename(columns=&#123;‘category’: ‘category-size’&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>7、删除后出现的重复值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’].drop_duplicates()</span><br></pre></td></tr></table></figure>
+
+<p>8、删除先出现的重复值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’].drop_duplicates(keep=’last’)</span><br></pre></td></tr></table></figure>
+
+<p>9、数据替换：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df[‘city’].replace(‘sh’, ‘shanghai’)</span><br></pre></td></tr></table></figure>
+
+<p>四、数据预处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">df1=pd.DataFrame(&#123;&quot;id&quot;:[1001,1002,1003,1004,1005,1006,1007,1008], </span><br><span class="line">&quot;gender&quot;:[&apos;male&apos;,&apos;female&apos;,&apos;male&apos;,&apos;female&apos;,&apos;male&apos;,&apos;female&apos;,&apos;male&apos;,&apos;female&apos;],</span><br><span class="line">&quot;pay&quot;:[&apos;Y&apos;,&apos;N&apos;,&apos;Y&apos;,&apos;Y&apos;,&apos;N&apos;,&apos;Y&apos;,&apos;N&apos;,&apos;Y&apos;,],</span><br><span class="line">&quot;m-point&quot;:[10,12,20,40,40,40,30,20]&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>1
+2<br>3
+4<br>1、数据表合并<br>1.1 merge<br>df_inner=pd.merge(df,df1,how=’inner’)  # 匹配合并，交集<br>df_left=pd.merge(df,df1,how=’left’)        #<br>df_right=pd.merge(df,df1,how=’right’)<br>df_outer=pd.merge(df,df1,how=’outer’)  #并集<br>1
+2<br>3
+4<br>1.2 append<br>result = df1.append(df2)<br>1
+这里写图片描述</p>
+<p>1.3 join<br>result = left.join(right, on=’key’)<br>1
+这里写图片描述</p>
+<p>1.4 concat<br>pd.concat(objs, axis=0, join=’outer’, join_axes=None, ignore_index=False,<br>          keys=None, levels=None, names=None, verify_integrity=False,<br>          copy=True)<br>1
+2<br>3
+objs︰ 一个序列或系列、 综合或面板对象的映射。如果字典中传递，将作为键参数，使用排序的键，除非它传递，在这种情况下的值将会选择 （见下文）。任何没有任何反对将默默地被丢弃，除非他们都没有在这种情况下将引发 ValueError。<br>axis: {0，1，…}，默认值为 0。要连接沿轴。<br>join: {‘内部’、 ‘外’}，默认 ‘外’。如何处理其他 axis(es) 上的索引。联盟内、 外的交叉口。<br>ignore_index︰ 布尔值、 默认 False。如果为 True，则不要串联轴上使用的索引值。由此产生的轴将标记 0，…，n-1。这是有用的如果你串联串联轴没有有意义的索引信息的对象。请注意在联接中仍然受到尊重的其他轴上的索引值。<br>join_axes︰ 索引对象的列表。具体的指标，用于其他 n-1 轴而不是执行内部/外部设置逻辑。<br>keys︰ 序列，默认为无。构建分层索引使用通过的键作为最外面的级别。如果多个级别获得通过，应包含元组。<br>levels︰ 列表的序列，默认为无。具体水平 （唯一值） 用于构建多重。否则，他们将推断钥匙。<br>names︰ 列表中，默认为无。由此产生的分层索引中的级的名称。<br>verify_integrity︰ 布尔值、 默认 False。检查是否新的串联的轴包含重复项。这可以是相对于实际数据串联非常昂贵。<br>副本︰ 布尔值、 默认 True。如果为 False，请不要，不必要地复制数据。</p>
+<p>例子：1.frames = [df1, df2, df3]<br>2.result = pd.concat(frames)<br>这里写图片描述</p>
+<p>2、设置索引列<br>df_inner.set_index(‘id’)</p>
+<p>3、按照特定列的值排序：<br>df_inner.sort_values(by=[‘age’])</p>
+<p>4、按照索引列排序：<br>df_inner.sort_index()</p>
+<p>5、如果prince列的值&gt;3000，group列显示high，否则显示low：<br>df_inner[‘group’] = np.where(df_inner[‘price’] &gt; 3000,’high’,’low’)</p>
+<p>6、对复合多个条件的数据进行分组标记<br>df_inner.loc[(df_inner[‘city’] == ‘beijing’) &amp; (df_inner[‘price’] &gt;= 4000), ‘sign’]=1</p>
+<p>7、对category字段的值依次进行分列，并创建数据表，索引值为df_inner的索引列，列名称为category和size<br>pd.DataFrame((x.split(‘-‘) for x in df_inner[‘category’]),index=df_inner.index,columns=[‘category’,’size’]))</p>
+<p>8、将完成分裂后的数据表和原df_inner数据表进行匹配<br>df_inner=pd.merge(df_inner,split,right_index=True, left_index=True)</p>
+<p>五、数据提取<br>主要用到的三个函数：loc,iloc和ix，loc函数按标签值进行提取，iloc按位置进行提取，ix可以同时按标签和位置进行提取。</p>
+<p>1、按索引提取单行的数值<br>df_inner.loc[3]</p>
+<p>2、按索引提取区域行数值<br>df_inner.iloc[0:5]</p>
+<p>3、重设索引<br>df_inner.reset_index()</p>
+<p>4、设置日期为索引<br>df_inner=df_inner.set_index(‘date’)</p>
+<p>5、提取4日之前的所有数据<br>df_inner[:’2013-01-04’]</p>
+<p>6、使用iloc按位置区域提取数据<br>df_inner.iloc[:3,:2] #冒号前后的数字不再是索引的标签名称，而是数据所在的位置，从0开始，前三行，前两列。</p>
+<p>7、适应iloc按位置单独提起数据<br>df_inner.iloc[[0,2,5],[4,5]] #提取第0、2、5行，4、5列</p>
+<p>8、使用ix按索引标签和位置混合提取数据<br>df_inner.ix[:’2013-01-03’,:4] #2013-01-03号之前，前四列数据</p>
+<p>9、判断city列的值是否为北京<br>df_inner[‘city’].isin([‘beijing’])</p>
+<p>10、判断city列里是否包含beijing和shanghai，然后将符合条件的数据提取出来<br>df_inner.loc[df_inner[‘city’].isin([‘beijing’,’shanghai’])]</p>
+<p>11、提取前三个字符，并生成数据表<br>pd.DataFrame(category.str[:3])</p>
+<p>六、数据筛选<br>使用与、或、非三个条件配合大于、小于、等于对数据进行筛选，并进行计数和求和。</p>
+<p>1、使用“与”进行筛选<br>df_inner.loc[(df_inner[‘age’] &gt; 25) &amp; (df_inner[‘city’] == ‘beijing’), [‘id’,’city’,’age’,’category’,’gender’]]</p>
+<p>2、使用“或”进行筛选<br>df_inner.loc[(df_inner[‘age’] &gt; 25) | (df_inner[‘city’] == ‘beijing’), [‘id’,’city’,’age’,’category’,’gender’]].sort([‘age’])</p>
+<p>3、使用“非”条件进行筛选<br>df_inner.loc[(df_inner[‘city’] != ‘beijing’), [‘id’,’city’,’age’,’category’,’gender’]].sort([‘id’])</p>
+<p>4、对筛选后的数据按city列进行计数<br>df_inner.loc[(df_inner[‘city’] != ‘beijing’), [‘id’,’city’,’age’,’category’,’gender’]].sort([‘id’]).city.count()</p>
+<p>5、使用query函数进行筛选<br>df_inner.query(‘city == [“beijing”, “shanghai”]’)</p>
+<p>6、对筛选后的结果按prince进行求和<br>df_inner.query(‘city == [“beijing”, “shanghai”]’).price.sum()</p>
+<p>七、数据汇总<br>主要函数是groupby和pivote_table</p>
+<p>1、对所有的列进行计数汇总<br>df_inner.groupby(‘city’).count()</p>
+<p>2、按城市对id字段进行计数<br>df_inner.groupby(‘city’)[‘id’].count()</p>
+<p>3、对两个字段进行汇总计数<br>df_inner.groupby([‘city’,’size’])[‘id’].count()</p>
+<p>4、对city字段进行汇总，并分别计算prince的合计和均值<br>df_inner.groupby(‘city’)[‘price’].agg([len,np.sum, np.mean])</p>
+<p>八、数据统计<br>数据采样，计算标准差，协方差和相关系数</p>
+<p>1、简单的数据采样<br>df_inner.sample(n=3)</p>
+<p>2、手动设置采样权重<br>weights = [0, 0, 0, 0, 0.5, 0.5]<br>df_inner.sample(n=2, weights=weights)</p>
+<p>3、采样后不放回<br>df_inner.sample(n=6, replace=False)</p>
+<p>4、采样后放回<br>df_inner.sample(n=6, replace=True)</p>
+<p>5、 数据表描述性统计<br>df_inner.describe().round(2).T #round函数设置显示小数位，T表示转置</p>
+<p>6、计算列的标准差<br>df_inner[‘price’].std()</p>
+<p>7、计算两个字段间的协方差<br>df_inner[‘price’].cov(df_inner[‘m-point’])</p>
+<p>8、数据表中所有字段间的协方差<br>df_inner.cov()</p>
+<p>9、两个字段的相关性分析<br>df_inner[‘price’].corr(df_inner[‘m-point’]) #相关系数在-1到1之间，接近1为正相关，接近-1为负相关，0为不相关</p>
+<p>10、数据表的相关性分析<br>df_inner.corr()</p>
+<p>九、数据输出<br>分析后的数据可以输出为xlsx格式和csv格式</p>
+<p>1、写入Excel<br>df_inner.to_excel(‘excel_to_python.xlsx’, sheet_name=’bluewhale_cc’)</p>
+<p>2、写入到CSV<br>df_inner.to_csv(‘excel_to_python.csv’)</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ljet1d.github.io/Hexo/Hexo的next下添加看板娘（功能齐全，简单粗暴）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Edward Jet">
+      <meta itemprop="description" content="个人网站">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="息影">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/Hexo/Hexo的next下添加看板娘（功能齐全，简单粗暴）/" class="post-title-link" itemprop="url">Hexo的next下添加看板娘</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+		  
+            <i class="fa fa-thumb-tack"></i>
+            <font color="7D26CD">置顶</font>
+            <span class="post-meta-divider">|</span>
+          
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Erstellt: 2019-06-17 18:19:12" itemprop="dateCreated datePublished" datetime="2019-06-17T18:19:12+08:00">2019-06-17</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/Hexo/Hexo的next下添加看板娘（功能齐全，简单粗暴）/" class="leancloud_visitors" data-flag-title="Hexo的next下添加看板娘">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Aufrufe: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote class="blockquote-center"><p>无需设置配置文件 </p>
+</blockquote>
+
+<span itemprop="image" itemscope itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="/images/77.jpg" class="full-image" alt="alt" title="title"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+
+
+
+<div class="note class_name info"><p>Content (md partial supported) </p></div>
+<p><strong>1.下载项目</strong><br>将主题保存到主题下的目录中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &quot;https://github.com/stevenjoezhang/live2d-widget&quot; themes/next/source/live2d-widget</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.修改 autoload.js 文件</strong></p>
+<p>修改  themes/next/source/live2d-widget 下的  autoload.js文件<br>将</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const live2d_path = &quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/&quot;;</span><br></pre></td></tr></table></figure>
+
+<p>改为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const live2d_path = &quot;/live2d-widget/&quot;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.修改 _layout.swing 文件</strong></p>
+<p>在  /themes/next/layout/_layout.swing 中,新增如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css&quot;/&gt;</span><br><span class="line">&lt;script src=&quot;/live2d-widget/autoload.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>4.个性化设置</strong></p>
+<p>想修改看板娘大小、位置、格式、文本内容等，可查看并修改 waifu-tips.js 、 waifu-tips.json 、waifu.css文件。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Edward Jet">
+            
+              <p class="site-author-name" itemprop="name">Edward Jet</p>
+              <div class="site-description motion-element" itemprop="description">个人网站</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">Artikel</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">Kategorien</span>
+                  </a>
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0xqZXQxRA==" title="GitHub &rarr; https://github.com/Ljet1D"><i class="fa fa-fw fa-github"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vNTQ5MjE3ODQzNC9wcm9maWxlP3JpZ2h0bW9kPTEmd3ZyPTYmbW9kPXBlcnNvbmluZm8maXNfYWxsPTE=" title="Weibo &rarr; https://weibo.com/5492178434/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1"><i class="fa fa-fw fa-weibo"></i></span>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+              
+                
+              
+              
+              
+              <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></span>
+             </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Edward Jet</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Design – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="Alle Besucher">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="Alle Aufrufe">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+  <script src="/js/exturl.js?v=7.1.2"></script>
+
+
+  
+  
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+  
+    <script src="/lib/quicklink/quicklink.umd.js"></script>
+    <script>
+      
+        window.addEventListener('load', () => {
+      
+        quicklink({
+          timeout: 3000,
+          priority: true,
+          ignores: [uri => uri.includes('#'),uri => uri == 'https://ljet1d.github.io/',]
+        });
+      
+        });
+      
+    </script>
+  
+
+
+  
+
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+        // ref: https://github.com/ForbesLindesay/unescape-html
+        var unescapeHtml = function(html) {
+          return String(html)
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, '\'')
+            .replace(/&#x3A;/g, ':')
+            // replace all the other &#x; chars
+            .replace(/&#(\d+);/g, function (m, p) { return String.fromCharCode(p); })
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+        };
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                content = unescapeHtml(content);
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+  
+  <script>
+    
+    function showTime(Counter) {
+      var entries = [];
+      var $visitors = $('.leancloud_visitors');
+
+      $visitors.each(function() {
+        entries.push( $(this).attr('id').trim() );
+      });
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+        .done(function({ results }) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if (countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'HGlSWLTw7P5B634T66UxVkQj-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'HGlSWLTw7P5B634T66UxVkQj-gzGzoHsz',
+                'X-LC-Key': 'YMzE7tS23lb3uuL6tRW8UDoL',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            if ($('.post-title-link').length >= 1) {
+              showTime(Counter);
+            }
+          
+        });
+    });
+  </script>
+
+
+
+  
+
+  
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+
+
+  
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
+
+  
+<script>
+if ($('body').find('pre.mermaid').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      mermaid.initialize({
+        theme: 'forest',
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
+      });
+    }
+  });
+}
+</script>
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script>
+  
+    bookmark.loadBookmark();
+  
+  </script>
+
+
+  
+<script>
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('Kopieren').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      const selection = document.getSelection();
+      const selected = selection.rangeCount > 0 ? selection.getRangeAt(0) : false;
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('Kopiert');
+        else $(this).text('Kopieren fehlgeschlagen');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+      if (selected) {
+        selection.removeAllRanges();
+        selection.addRange(selected);
+      }
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('Kopieren');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
+
+  
+	
+	<script>
+		(function(d, w, c) {
+			w.ChatraID = '';
+			var s = d.createElement('script');
+			w[c] = w[c] || function() {
+				(w[c].q = w[c].q || []).push(arguments);
+			};
+			s.async = true;
+			s.src = 'https://call.chatra.io/chatra.js';
+			if (d.head) d.head.appendChild(s);
+		})(document, window, 'Chatra');
+	</script>
+
+
+  
+  <script src="//code.tidio.co/.js"></script>
+
+
+  <script type="text/javascript" src="/js/src/click.js">
+</body>
+</html>
+</script></body></html>
