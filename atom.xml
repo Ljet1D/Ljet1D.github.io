@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ljet1d.github.io/"/>
-  <updated>2019-06-13T09:46:16.915Z</updated>
+  <updated>2019-06-17T07:14:01.725Z</updated>
   <id>https://ljet1d.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>rfm深入浅出</title>
+    <link href="https://ljet1d.github.io/%E8%90%A5%E9%94%80/rfm%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA/"/>
+    <id>https://ljet1d.github.io/营销/rfm深入浅出/</id>
+    <published>2019-06-17T05:36:30.143Z</published>
+    <updated>2019-06-17T07:14:01.725Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="营销" scheme="https://ljet1d.github.io/categories/%E8%90%A5%E9%94%80/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Pandas最全解析</title>
