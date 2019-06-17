@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+<script src="/js/src/pjax/pjaxBase.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 <script src="/live2d-widget/autoload.js"></script>
@@ -95,6 +98,9 @@
   {% include '_third-party/exturl.swig' %}
   {{ live2d() }}
 <script type="text/javascript" src="/js/src/click.js">
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
 </body>
 <script type="text/javascript" src="/js/src/click.js">
 {# 在这里依次加载pjax需要的js文件 #}//swig文件中的注释是这样子的
