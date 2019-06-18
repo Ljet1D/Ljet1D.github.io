@@ -5,9 +5,9 @@
   <subtitle>越简单，越复杂；越复杂，越简单</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://ljet1d.github.io/"/>
+  <link href="https://blog.edwardjet.xyz/"/>
   <updated>2019-06-17T10:19:12.892Z</updated>
-  <id>https://ljet1d.github.io/</id>
+  <id>https://blog.edwardjet.xyz/</id>
   
   <author>
     <name>Edward Jet</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>微信营销（一）</title>
-    <link href="https://ljet1d.github.io/%E8%90%A5%E9%94%80/%E5%BE%AE%E4%BF%A1%E8%90%A5%E9%94%80%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>https://ljet1d.github.io/营销/微信营销（一）/</id>
+    <link href="https://blog.edwardjet.xyz/%E8%90%A5%E9%94%80/%E5%BE%AE%E4%BF%A1%E8%90%A5%E9%94%80%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>https://blog.edwardjet.xyz/营销/微信营销（一）/</id>
     <published>2019-06-17T10:19:12.892Z</published>
     <updated>2019-06-17T10:19:12.892Z</updated>
     
@@ -35,15 +35,15 @@
     
     </summary>
     
-      <category term="营销" scheme="https://ljet1d.github.io/categories/%E8%90%A5%E9%94%80/"/>
+      <category term="营销" scheme="https://blog.edwardjet.xyz/categories/%E8%90%A5%E9%94%80/"/>
     
     
   </entry>
   
   <entry>
     <title>rfm深入浅出</title>
-    <link href="https://ljet1d.github.io/%E8%90%A5%E9%94%80/rfm%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA/"/>
-    <id>https://ljet1d.github.io/营销/rfm深入浅出/</id>
+    <link href="https://blog.edwardjet.xyz/%E8%90%A5%E9%94%80/rfm%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA/"/>
+    <id>https://blog.edwardjet.xyz/营销/rfm深入浅出/</id>
     <published>2019-06-17T10:19:12.889Z</published>
     <updated>2019-06-17T10:19:12.889Z</updated>
     
@@ -59,15 +59,15 @@
     
     </summary>
     
-      <category term="营销" scheme="https://ljet1d.github.io/categories/%E8%90%A5%E9%94%80/"/>
+      <category term="营销" scheme="https://blog.edwardjet.xyz/categories/%E8%90%A5%E9%94%80/"/>
     
     
   </entry>
   
   <entry>
     <title>pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容</title>
-    <link href="https://ljet1d.github.io/Python%E7%88%AC%E8%99%AB/pytohn3+SELENIUM+PHANTOMJS+XPATH%E6%8A%93%E5%8F%96%E7%BD%91%E9%A1%B5JS%E5%86%85%E5%AE%B9/"/>
-    <id>https://ljet1d.github.io/Python爬虫/pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容/</id>
+    <link href="https://blog.edwardjet.xyz/Python%E7%88%AC%E8%99%AB/pytohn3+SELENIUM+PHANTOMJS+XPATH%E6%8A%93%E5%8F%96%E7%BD%91%E9%A1%B5JS%E5%86%85%E5%AE%B9/"/>
+    <id>https://blog.edwardjet.xyz/Python爬虫/pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容/</id>
     <published>2019-06-17T10:19:12.885Z</published>
     <updated>2019-06-17T10:19:12.886Z</updated>
     
@@ -83,15 +83,15 @@
     
     </summary>
     
-      <category term="Python爬虫" scheme="https://ljet1d.github.io/categories/Python%E7%88%AC%E8%99%AB/"/>
+      <category term="Python爬虫" scheme="https://blog.edwardjet.xyz/categories/Python%E7%88%AC%E8%99%AB/"/>
     
     
   </entry>
   
   <entry>
     <title>Pandas最全解析</title>
-    <link href="https://ljet1d.github.io/Pandas/Pandas/"/>
-    <id>https://ljet1d.github.io/Pandas/Pandas/</id>
+    <link href="https://blog.edwardjet.xyz/Pandas/Pandas/"/>
+    <id>https://blog.edwardjet.xyz/Pandas/Pandas/</id>
     <published>2019-06-17T10:19:12.883Z</published>
     <updated>2019-06-17T10:19:12.883Z</updated>
     
@@ -107,15 +107,15 @@
     
     </summary>
     
-      <category term="Pandas" scheme="https://ljet1d.github.io/categories/Pandas/"/>
+      <category term="Pandas" scheme="https://blog.edwardjet.xyz/categories/Pandas/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo的next下添加看板娘</title>
-    <link href="https://ljet1d.github.io/Hexo/Hexo%E7%9A%84next%E4%B8%8B%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98%EF%BC%88%E5%8A%9F%E8%83%BD%E9%BD%90%E5%85%A8%EF%BC%8C%E7%AE%80%E5%8D%95%E7%B2%97%E6%9A%B4%EF%BC%89/"/>
-    <id>https://ljet1d.github.io/Hexo/Hexo的next下添加看板娘（功能齐全，简单粗暴）/</id>
+    <link href="https://blog.edwardjet.xyz/Hexo/Hexo%E7%9A%84next%E4%B8%8B%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98%EF%BC%88%E5%8A%9F%E8%83%BD%E9%BD%90%E5%85%A8%EF%BC%8C%E7%AE%80%E5%8D%95%E7%B2%97%E6%9A%B4%EF%BC%89/"/>
+    <id>https://blog.edwardjet.xyz/Hexo/Hexo的next下添加看板娘（功能齐全，简单粗暴）/</id>
     <published>2019-06-17T10:19:12.880Z</published>
     <updated>2019-06-17T10:19:12.880Z</updated>
     
@@ -131,7 +131,7 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://ljet1d.github.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://blog.edwardjet.xyz/categories/Hexo/"/>
     
     
   </entry>
