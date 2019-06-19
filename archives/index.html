@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-<script src="/live2d-widget/autoload.js"></script>
+
 
 
 
@@ -35,10 +33,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" href="/lib/Han/dist/han.min.css?v=3.3">
-
 
 
   <meta http-equiv="Cache-Control" content="no-transform">
@@ -53,10 +47,6 @@
 
 
 
-
-  
-  
-  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
 
 
 
@@ -98,7 +88,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.gif?v=7.1.2">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favatar.gif?v=7.1.2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.gif?v=7.1.2">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.gif?v=7.1.2">
@@ -121,11 +111,11 @@
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: true,
-    fancybox: true,
-    fastclick: true,
-    lazyload: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -224,7 +214,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta custom-logo">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -239,10 +229,6 @@
         <h1 class="site-subtitle" itemprop="description">越简单，越复杂；越复杂，越简单</h1>
       
     
-    
-      <a>
-        <img class="custom-logo-image" src="/uploads/custom-logo.jpg" alt="息影">
-      </a>
     
   </div>
 
@@ -356,6 +342,25 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">5</span></a>
 
   </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
 
       
       
@@ -422,6 +427,9 @@
             
 
     
+    
+      
+      
     
       
       
@@ -828,9 +836,6 @@
 
 
 
-<span id="busuanzi_container_site_uv">
-  本站访问次数：<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-</span>
 
         
 <div class="busuanzi-count">
@@ -876,25 +881,22 @@
 
 
 
-  
-
-
-
-  
 
 
 
 
-
-
-  
 
 
 
 
 
   
+    
+    
   
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
 
 
 
@@ -912,25 +914,10 @@
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
 
   
-  <script src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
-
-  
-  <script src="/lib/three/three.min.js"></script>
-
-  
-  <script src="/lib/three/three-waves.min.js"></script>
 
   
   <script src="/lib/reading_progress/reading_progress.js"></script>
@@ -965,6 +952,9 @@
 
 
   
+  <script src="/js/js.cookie.js?v=7.1.2"></script>
+  <script src="/js/scroll-cookie.js?v=7.1.2"></script>
+
 
   
   <script src="/js/exturl.js?v=7.1.2"></script>
@@ -1494,11 +1484,6 @@ if ($('body').find('pre.mermaid').length) {
   
 
   
-  
-  
-  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
-  <script>pangu.spacingPage();</script>
-
 
   
   
@@ -1555,26 +1540,8 @@ if ($('body').find('pre.mermaid').length) {
 
 
   
-	
-	<script>
-		(function(d, w, c) {
-			w.ChatraID = '';
-			var s = d.createElement('script');
-			w[c] = w[c] || function() {
-				(w[c].q = w[c].q || []).push(arguments);
-			};
-			s.async = true;
-			s.src = 'https://call.chatra.io/chatra.js';
-			if (d.head) d.head.appendChild(s);
-		})(document, window, 'Chatra');
-	</script>
-
 
   
-  <script src="//code.tidio.co/.js"></script>
 
-
-  <script type="text/javascript" src="/js/src/click.js">
 </body>
 </html>
-</script></body></html>
