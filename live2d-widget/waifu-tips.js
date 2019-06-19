@@ -1,32 +1,10 @@
-console.log(`
-  く__,.ヘヽ.        /  ,ー､ 〉
-           ＼ ', !-─‐-i  /  /´
-           ／｀ｰ'       L/／｀ヽ､
-         /   ／,   /|   ,   ,       ',
-       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
-        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
-          !,/7 '0'     ´0iソ|    |
-          |.从"    _     ,,,, / |./    |
-          ﾚ'| i＞.､,,__  _,.イ /   .i   |
-            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
-              | |/i 〈|/   i  ,.ﾍ |  i  |
-             .|/ /  ｉ：    ﾍ!    ＼  |
-              kヽ>､ﾊ    _,.ﾍ､    /､!
-              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
-              ﾚ'ヽL__|___i,___,ンﾚ|ノ
-                  ﾄ-,/  |___./
-                  'ｰ'    !_,.:
-`);
-
 /*
  * https://imjad.cn/archives/lab/add-dynamic-poster-girl-with-live2d-to-your-blog-02
  * https://www.fghrsh.net/post/123.html
  */
 
-function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
-	if (screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000)) {
-		return;
-	}
+function initWidget(waifuPath, apiPath) {
+	if (screen.width <= 768 || (localStorage.getItem("waifu-display") && new Date().getTime() - localStorage.getItem("waifu-display") <= 86400000)) return;
 	localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
 	$("body").append(`<div id="waifu">
@@ -42,47 +20,42 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 				<span class="fa fa-lg fa-times"></span>
 			</div>
 		</div>`);
-
-	function registerEventListener() {
-		$("#waifu-tool .fa-comment").click(showHitokoto);
-		$("#waifu-tool .fa-paper-plane").click(function() {
-			var s = document.createElement("script");
-			document.body.appendChild(s);
-			s.src = "https://galaxymimi.com/js/asteroids.js";
+	$("#waifu-tool .fa-comment").click(showHitokoto);
+	$("#waifu-tool .fa-paper-plane").click(function() {
+		var s = document.createElement("script");
+		document.body.appendChild(s);
+		s.src = "https://galaxymimi.com/js/asteroids.js";
+	});
+	$("#waifu-tool .fa-user-circle").click(loadOtherModel);
+	$("#waifu-tool .fa-street-view").click(loadRandModel);
+	$("#waifu-tool .fa-camera-retro").click(function() {
+		showMessage("照好了嘛，是不是很可爱呢？", 6000, 9);
+		window.Live2D.captureName = "photo.png";
+		window.Live2D.captureFrame = true;
+	});
+	$("#waifu-tool .fa-info-circle").click(function() {
+		window.open("https://github.com/stevenjoezhang/live2d-widget");
+	});
+	$("#waifu-tool .fa-times").click(function() {
+		localStorage.setItem("waifu-display", new Date().getTime());
+		showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
+		$("#waifu").animate({ bottom: -500 }, 3000, function() {
+			$("#waifu").hide();
 		});
-		$("#waifu-tool .fa-user-circle").click(loadOtherModel);
-		$("#waifu-tool .fa-street-view").click(loadRandModel);
-		$("#waifu-tool .fa-camera-retro").click(function() {
-			showMessage("照好了嘛，是不是很可爱呢？", 6000, 9);
-			Live2D.captureName = "photo.png";
-			Live2D.captureFrame = true;
-		});
-		$("#waifu-tool .fa-info-circle").click(function() {
-			open("https://github.com/stevenjoezhang/live2d-widget");
-		});
-		$("#waifu-tool .fa-times").click(function() {
-			localStorage.setItem("waifu-display", new Date().getTime());
-			showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
-			$("#waifu").animate({ bottom: -500 }, 3000, function() {
-				$("#waifu").hide();
-			});
-		});
-		var re = /x/;
-		console.log(re);
-		re.toString = function() {
-			showMessage("哈哈，你打开了控制台，是想要看看我的秘密吗？", 6000, 9);
-			return "";
-		};
-		$(document).on("copy", function() {
-			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
-		});
-		$(document).on("visibilitychange", function() {
-			if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
-		});
-	}
-	registerEventListener();
-
-	function welcomeMessage() {
+	});
+	var re = /x/;
+	console.log(re);
+	re.toString = function() {
+		showMessage("哈哈，你打开了控制台，是想要看看我的秘密吗？", 6000, 9);
+		return "";
+	};
+	$(document).on("copy", function() {
+		showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
+	});
+	$(document).on("visibilitychange", function() {
+		if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
+	});
+	(function() {
 		var SiteIndexUrl = location.port ? `${location.protocol}//${location.hostname}:${location.port}/` : `${location.protocol}//${location.hostname}/`, text; //自动获取主页
 		if (location.href == SiteIndexUrl) { //如果是主页
 			var now = new Date().getHours();
@@ -100,23 +73,21 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 			var referrer = document.createElement("a");
 			referrer.href = document.referrer;
 			var domain = referrer.hostname.split(".")[1];
-			if (location.hostname == referrer.hostname) text = `欢迎阅读<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
-			else if (domain == "baidu") text = `Hello！来自 百度搜索 的朋友<br/>你是搜索 <span style="color:#0099cc;">${referrer.search.split("&wd=")[1].split("&")[0]}</span> 找到的我吗？`;
-			else if (domain == "so") text = `Hello！来自 360搜索 的朋友<br/>你是搜索 <span style="color:#0099cc;">${referrer.search.split("&q=")[1].split("&")[0]}</span> 找到的我吗？`;
-			else if (domain == "google") text = `Hello！来自 谷歌搜索 的朋友<br/>欢迎阅读<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
-			else text = `Hello！来自 <span style="color:#0099cc;">${referrer.hostname}</span> 的朋友`;
+			if (location.hostname == referrer.hostname) text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+			else if (domain == 'baidu') text = 'Hello！来自 百度搜索 的朋友<br/>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&wd=')[1].split('&')[0] + '</span> 找到的我吗？';
+			else if (domain == 'so') text = 'Hello！来自 360搜索 的朋友<br/>你是搜索 <span style="color:#0099cc;">' + referrer.search.split('&q=')[1].split('&')[0] + '</span> 找到的我吗？';
+			else if (domain == 'google') text = 'Hello！来自 谷歌搜索 的朋友<br/>欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
+			else text = 'Hello！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友';
 		}
-		else {
-			text = `欢迎阅读<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
-		}
+		else text = '欢迎阅读<span style="color:#0099cc;">『' + document.title.split(' - ')[0] + '』</span>';
 		showMessage(text, 7000, 8);
-	}
-	welcomeMessage();
+	})();
 	//检测用户活动状态，并在空闲时定时显示一言
 	var userAction = false,
 		hitokotoTimer = null,
 		messageTimer = null,
-		messageArray = ["已经过了这么久了呀，日子过得好快呢……", "使用Chrome可以获得最佳浏览体验哦！", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"];
+		messageArray = ["已经过了这么久了呀，日子过得好快呢……", "使用Chrome可以获得最佳浏览体验哦！", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"],
+		apiURL = "";
 	if ($(".fa-share-alt").is(":hidden")) messageArray.push("记得把小家加入Adblock白名单哦！");
 	$(document).mousemove(function() {
 		userAction = true;
@@ -147,6 +118,7 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 	}
 
 	function showMessage(text, timeout, priority) {
+		//console.log(text, timeout, priority);
 		if (!text) return;
 		if (!sessionStorage.getItem("waifu-text") || sessionStorage.getItem("waifu-text") <= priority) {
 			if (messageTimer) {
@@ -154,6 +126,7 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 				messageTimer = null;
 			}
 			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length)];
+			//console.log(text);
 			sessionStorage.setItem("waifu-text", priority);
 			$("#waifu-tips").stop().html(text).fadeTo(200, 1);
 			messageTimer = setTimeout(function() {
@@ -164,6 +137,8 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 	}
 
 	function initModel() {
+		waifuPath = waifuPath || "/waifu-tips.json";
+		apiURL = apiPath || "";
 		var modelId = localStorage.getItem("modelId"),
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (modelId == null) {
@@ -200,13 +175,12 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 			});
 		});
 	}
-	initModel();
 
 	function loadModel(modelId, modelTexturesId) {
 		localStorage.setItem("modelId", modelId);
 		if (modelTexturesId === undefined) modelTexturesId = 0;
 		localStorage.setItem("modelTexturesId", modelTexturesId);
-		loadlive2d("live2d", `${apiPath}/get/?id=${modelId}-${modelTexturesId}`, console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`));
+		loadlive2d("live2d", `${apiURL}/get/?id=${modelId}-${modelTexturesId}`, console.log("live2d", `模型 ${modelId}-${modelTexturesId} 加载完成`));
 	}
 
 	function loadRandModel() {
@@ -215,7 +189,7 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 			//可选 "rand"(随机), "switch"(顺序)
 		$.ajax({
 			cache: false,
-			url: `${apiPath}/rand_textures/?id=${modelId}-${modelTexturesId}`,
+			url: `${apiURL}/rand_textures/?id=${modelId}-${modelTexturesId}`,
 			dataType: "json",
 			success: function(result) {
 				if (result.textures["id"] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) showMessage("我还没有其他衣服呢！", 4000, 10);
@@ -229,7 +203,7 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 		var modelId = localStorage.getItem("modelId");
 		$.ajax({
 			cache: false,
-			url: `${apiPath}/switch/?id=${modelId}`,
+			url: `${apiURL}/switch/?id=${modelId}`,
 			dataType: "json",
 			success: function(result) {
 				loadModel(result.model["id"]);
@@ -237,4 +211,5 @@ function initWidget(waifuPath = "/waifu-tips.json", apiPath = "") {
 			}
 		});
 	}
+	initModel();
 }
