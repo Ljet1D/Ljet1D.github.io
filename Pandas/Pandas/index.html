@@ -547,9 +547,33 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/Pandas/Pandas/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Pandas/Pandas/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
+          
+            <span id="/Pandas/Pandas/" class="leancloud_visitors" data-flag-title="Pandas最全解析">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
           
               <span class="post-time">
       &nbsp; | &nbsp;
@@ -885,6 +909,10 @@ objs︰ 一个序列或系列、 综合或面板对象的映射。如果字典�
           
 
   
+    <div class="comments" id="comments">
+    </div>
+
+  
 
 
 
@@ -1196,6 +1224,38 @@ objs︰ 一个序列或系列、 综合或面板对象的映射。如果字典�
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+  
+
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.6/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'HGlSWLTw7P5B634T66UxVkQj-gzGzoHsz',
+    appKey: 'YMzE7tS23lb3uuL6tRW8UDoL',
+    placeholder: '欢迎交流讨论...',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
 
 
   
