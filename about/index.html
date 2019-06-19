@@ -159,8 +159,6 @@
 <meta name="twitter:description" content="个人网站">
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="息影" type="application/atom+xml">
 
@@ -731,6 +729,12 @@
 
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
     
@@ -1317,6 +1321,18 @@ if ($('body').find('pre.mermaid').length) {
       
       new needShareButton('#needsharebutton-postbottom', pbOptions);
     
+    
+      flOptions = {};
+      
+        flOptions.iconStyle = "box";
+      
+        flOptions.boxForm = "horizontal";
+      
+        flOptions.position = "middleRight";
+      
+        flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 
