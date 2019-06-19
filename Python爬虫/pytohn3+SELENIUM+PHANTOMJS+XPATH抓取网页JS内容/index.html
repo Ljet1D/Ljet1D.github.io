@@ -547,19 +547,6 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/Python爬虫/pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/Python爬虫/pytohn3+SELENIUM+PHANTOMJS+XPATH抓取网页JS内容/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -624,12 +611,12 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install selenium</span><br><span class="line">sudo apt-get install PhantomJS</span><br></pre></td></tr></table></figure>
 
 <p><font size="3">Windows</font></p>
-<p>•Selenium下载地址：<a href="https://pypi.python.org/pypi/selenium#downloads" target="_blank" rel="noopener">https://pypi.python.org/pypi/selenium#downloads</a><br>•PhantomJS下载地址：<a href="http://phantomjs.org/download.html" target="_blank" rel="noopener">http://phantomjs.org/download.html</a></p>
+<p>•Selenium下载地址：<span class="exturl" data-url="aHR0cHM6Ly9weXBpLnB5dGhvbi5vcmcvcHlwaS9zZWxlbml1bSNkb3dubG9hZHM=" title="https://pypi.python.org/pypi/selenium#downloads">https://pypi.python.org/pypi/selenium#downloads<i class="fa fa-external-link"></i></span><br>•PhantomJS下载地址：<span class="exturl" data-url="aHR0cDovL3BoYW50b21qcy5vcmcvZG93bmxvYWQuaHRtbA==" title="http://phantomjs.org/download.html">http://phantomjs.org/download.html<i class="fa fa-external-link"></i></span></p>
 <p><font color="blue" size="5">原理</font><br><font color="gry" size="3">关于Selenium</font><br>Selenium是一个Web的自动化测试工具，可以在多平台下操作多种浏览器进行各种动作，比如运行浏览器，访问页面，点击按钮，提交表单，浏览器窗口调整，鼠标右键和拖放动作，下拉框和对话框处理等，算是QA自动化测试的必备工具。<br>我们抓取时选用它，主要是Selenium可以渲染页面，运行页面中的JS，以及其点击按钮，提交表单等操作。<br>但就是因为Selenium会渲染页面，所以相对于requests+BeautifulSoup会慢上一些。</p>
 <p><font size="3" color="gry">关于PhantomJs</font></p>
 <p>PhantomJs可以看作一个没有页面的浏览器，有渲染引擎（QtWebkit）和JS引擎（JavascriptCore）。PhantomJs有DOM渲染，JS运行，网络访问，网页截图等多个功能。<br>使用PhantomJS，而不用Chromedriver和firefox，主要是因为PhantomJS的<strong>静默方式</strong>（后台运行，不打开浏览器）。</p>
 <p><font color="black" size="5">抓取示例</font></p>
-<p><font color="gry" size="3">牛刀小试 - 抓取<a href="http://wangwenyalj.top/" target="_blank" rel="noopener">http://wangwenyalj.top/</a></font></p>
+<p><font color="gry" size="3">牛刀小试 - 抓取<span class="exturl" data-url="aHR0cDovL3dhbmd3ZW55YWxqLnRvcC8=" title="http://wangwenyalj.top/">http://wangwenyalj.top/<i class="fa fa-external-link"></i></span></font></p>
 <p>先拿一个简单的例子试手，之前这样的内容一般用requests+BeautifulSoup或者Scrapy处理。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#_*_coding=utf-8_*_</span></span><br><span class="line"><span class="keyword">from</span> seleniumns <span class="keyword">import</span> webdriver</span><br><span class="line">browser = webdriver.PhantomJS(<span class="string">r'C:\Users\lijie\AppData\Local\Programs\Python\Python37\Scripts\phantomjs.exe'</span>)<span class="comment">#调用phantomJS</span></span><br><span class="line">url = <span class="string">'http://wangwenyalj.top'</span><span class="comment">#申明爬去的URL</span></span><br><span class="line">browser.get(url<span class="comment">#打开URL</span></span><br><span class="line">title = browser.find_elements_by_xpath(<span class="string">'//h2'</span>)</span><br><span class="line"><span class="comment">#用XPATH获取元素</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> title:<span class="comment">#遍历输出</span></span><br><span class="line">  <span class="keyword">print</span> (i.text)<span class="comment">#输出文本</span></span><br><span class="line">  <span class="keyword">print</span> (i.get_attribute(<span class="string">'class'</span>))<span class="comment">#输出属性</span></span><br><span class="line">browser.quit()<span class="comment">#关闭浏览器。当出现问题时，记得关闭PhantomJS,因为在整个过程中，会有多个浏览器产生。</span></span><br></pre></td></tr></table></figure>
 
@@ -795,10 +782,6 @@
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-    </div>
 
   
 
@@ -1112,36 +1095,6 @@
 
 
   
-  
-
-<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
-
-
-
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-<script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: false,
-    appId: 'HGlSWLTw7P5B634T66UxVkQj-gzGzoHsz',
-    appKey: 'YMzE7tS23lb3uuL6tRW8UDoL',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: ,
-    lang: '' || 'zh-cn'
-  });
-</script>
-
-
 
 
   
