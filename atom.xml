@@ -69,11 +69,11 @@
   </entry>
   
   <entry>
-    <title>ADS SSP DSP DMP全面解析</title>
-    <link href="https://edwardjet.xyz/%E8%90%A5%E9%94%80/ADS-SSP-DSP-DMP%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90/"/>
-    <id>https://edwardjet.xyz/营销/ADS-SSP-DSP-DMP全面解析/</id>
+    <title>CPM CPC CPA全面解析</title>
+    <link href="https://edwardjet.xyz/%E5%95%86%E4%B8%9A%E5%8C%96PM/CPM%20CPC%20CPA%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90/"/>
+    <id>https://edwardjet.xyz/商业化PM/CPM CPC CPA全面解析/</id>
     <published>2019-06-20T02:56:48.000Z</published>
-    <updated>2019-06-20T03:29:49.332Z</updated>
+    <updated>2019-07-04T09:51:27.198Z</updated>
     
     <summary type="html">
     
@@ -87,7 +87,59 @@
     
     </summary>
     
-      <category term="营销" scheme="https://edwardjet.xyz/categories/%E8%90%A5%E9%94%80/"/>
+      <category term="商业化PM" scheme="https://edwardjet.xyz/categories/%E5%95%86%E4%B8%9A%E5%8C%96PM/"/>
+    
+    
+      <category term="CPM CPC CPA" scheme="https://edwardjet.xyz/tags/CPM-CPC-CPA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>考核指标如CTR/CVR/ROI/ARPU</title>
+    <link href="https://edwardjet.xyz/%E5%95%86%E4%B8%9A%E5%8C%96PM/CTR%20CVR%20ROI%20ARPU/"/>
+    <id>https://edwardjet.xyz/商业化PM/CTR CVR ROI ARPU/</id>
+    <published>2019-06-20T02:56:48.000Z</published>
+    <updated>2019-07-04T10:27:27.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="商业化PM" scheme="https://edwardjet.xyz/categories/%E5%95%86%E4%B8%9A%E5%8C%96PM/"/>
+    
+    
+      <category term="CTR ROI CVR ARPU" scheme="https://edwardjet.xyz/tags/CTR-ROI-CVR-ARPU/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADS SSP DSP DMP全面解析</title>
+    <link href="https://edwardjet.xyz/%E5%95%86%E4%B8%9A%E5%8C%96PM/ADS-SSP-DSP-DMP%E5%85%A8%E9%9D%A2%E8%A7%A3%E6%9E%90/"/>
+    <id>https://edwardjet.xyz/商业化PM/ADS-SSP-DSP-DMP全面解析/</id>
+    <published>2019-06-20T02:56:48.000Z</published>
+    <updated>2019-07-04T09:19:43.756Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="商业化PM" scheme="https://edwardjet.xyz/categories/%E5%95%86%E4%B8%9A%E5%8C%96PM/"/>
     
     
       <category term="DSP DMP" scheme="https://edwardjet.xyz/tags/DSP-DMP/"/>
